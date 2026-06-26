@@ -1,6 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,11 +15,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<Texture2D> imageTextures;
     [SerializeField] private Transform levelSelectPanel;
     [SerializeField] private Image levelSelectPrefab;
+    [SerializeField] private GameObject playAgainButton;
 
     private List<Transform> pieces;
     private Vector2Int dimensions;
     private float width;
     private float height;
+
+    private Transform draggingPieces = null;
+    private Vector3 offset;
+
+    private int piecesCorrect;
 
     void Start()
     {
@@ -44,7 +52,14 @@ public class GameManager : MonoBehaviour
         dimensions = GetDimensions(jigsawTexture, difficulty);
 
         CreateJigsawPieces(jigsawTexture);
+
+        Scatter();
+
+        UpdateBorder();
+
+        piecesCorrect = 0;
     }
+
 
     Vector2Int GetDimensions(Texture2D jigsawTexture, int difficulty)
     {
@@ -105,4 +120,102 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    private void Scatter() {
+        float orthoHeight = Camera.main.orthographicSize;
+        float screenAspect = (float)Screen.width / Screen.height;
+        float orthoWidth = (screenAspect * orthoHeight);
+
+        float pieceWidth = gameHolder.localScale.x;
+        float pieceHeight = gameHolder.localScale.y;
+
+        orthoHeight -= pieceHeight;
+        orthoWidth = pieceWidth;
+
+        foreach (Transform piece in pieces){
+            float x = Random.Range(-orthoWidth, orthoWidth);
+            float y = Random.Range(-orthoHeight, orthoHeight);
+            piece.position = new Vector3(x, y, -1);
+
+        }
+    } 
+
+    private void UpdateBorder() {
+        LineRenderer lineRenderer = gameHolder.GetComponent<LineRenderer>();
+
+        float halfWidth = (width * dimensions.x) / 2f;
+        float halfHeight = (height * dimensions.y) / 2f;
+
+        float borderZ = 0f;
+
+        lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, borderZ));
+        lineRenderer.SetPosition(1, new Vector3(halfWidth, halfHeight, borderZ));
+        lineRenderer.SetPosition(2, new Vector3(halfWidth, -halfHeight, borderZ));
+        lineRenderer.SetPosition(3, new Vector3(-halfWidth, -halfHeight, borderZ));
+
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
+
+        lineRenderer.enabled = true;
+    }
+
+    void Update()
+    {
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector2 mousePosition = Mouse.current.position.ReadValue();
+
+            RaycastHit2D hit = Physics2D.Raycast(
+                Camera.main.ScreenToWorldPoint(mousePosition),
+                Vector2.zero);
+
+            if (hit)
+            {
+                draggingPieces = hit.transform;
+                offset = draggingPieces.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                offset += Vector3.back;
+
+            }
+        }
+
+        if (draggingPieces != null && Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            draggingPieces.position += Vector3.forward;
+            SnapAndDisableIfCorrect();
+            draggingPieces = null;
+        }
+
+        if (draggingPieces != null)
+        {
+            Vector3 newPosition = Camera.main.ScreenToWorldPoint(
+                Mouse.current.position.ReadValue());
+
+            newPosition.z = draggingPieces.position.z;
+            newPosition += offset;
+            draggingPieces.position = newPosition;
+        }
+    }
+
+    private void SnapAndDisableIfCorrect() {
+        int pieceIndex = pieces.IndexOf(draggingPieces);
+
+        int col = pieceIndex % dimensions.x;
+        int row = pieceIndex / dimensions.x;
+
+        Vector2 targetPosition = new((-width * dimensions.x / 2) + (width * col) + (width / 2),
+                                       (-height * dimensions.y / 2) + (height * row) + (height / 2));
+
+        if (Vector2.Distance(draggingPieces.localPosition, targetPosition) < (width / 2))
+        {
+            draggingPieces.localPosition = targetPosition;
+            draggingPieces.GetComponent<BoxCollider2D>().enabled = false;
+
+            piecesCorrect++;
+            if (piecesCorrect == pieces.Count){
+                playAgainButton.SetActive(true);
+
+            }
+        }
+    }
 }
+  
