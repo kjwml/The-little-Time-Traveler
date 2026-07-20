@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e84b8ddaf2970c640913704e808c95a5
+guid: 362a362e85d7a784fadc1e6bed155287
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -204880330199349470
-    second: diary_closed_0
+      213: -2614316484649506433
+    second: Gothik_Stone_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,17 +122,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diary_closed_0
+      name: Gothik_Stone_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 33
-        width: 239
-        height: 321
+        x: 0
+        y: 0
+        width: 321
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 227c009dc6e182df0800000000000000
-      internalID: -204880330199349470
+      spriteID: f79a40a220518bbd0800000000000000
+      internalID: -2614316484649506433
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      diary_closed_0: -204880330199349470
+      Gothik_Stone_0: -2614316484649506433
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
