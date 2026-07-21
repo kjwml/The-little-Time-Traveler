@@ -18,7 +18,6 @@ public class JigsawGameManager : MonoBehaviour
     [SerializeField] private GameObject playAgainButton;
 
     private List<Transform> pieces;
-
     private Vector2Int dimensions;
 
     private float width;
@@ -33,16 +32,13 @@ public class JigsawGameManager : MonoBehaviour
     {
         pieces = new List<Transform>();
 
-     
         if (PuzzleData.SelectedTexture != null)
             puzzleTexture = PuzzleData.SelectedTexture;
 
         dimensions = GetDimensions(puzzleTexture, difficulty);
 
         CreateJigsawPieces(puzzleTexture);
-
         ScatterOnBar();
-
         UpdateBorder();
 
         piecesCorrect = 0;
@@ -88,7 +84,6 @@ public class JigsawGameManager : MonoBehaviour
                     -1f);
 
                 piece.localScale = new Vector3(width, height, 1);
-
                 piece.name = $"Piece {(row * dimensions.x) + col}";
 
                 pieces.Add(piece);
@@ -97,7 +92,6 @@ public class JigsawGameManager : MonoBehaviour
                 float v = 1f / dimensions.y;
 
                 Vector2[] uv = new Vector2[4];
-
                 uv[0] = new Vector2(u * col, v * row);
                 uv[1] = new Vector2(u * (col + 1), v * row);
                 uv[2] = new Vector2(u * col, v * (row + 1));
@@ -107,28 +101,29 @@ public class JigsawGameManager : MonoBehaviour
                 mesh.uv = uv;
 
                 Material material = piece.GetComponent<MeshRenderer>().material;
-                material.SetTexture("_MainTex", texture);
+
+                // Unterstützung für Standard-Shader & URP
+                if (material.HasProperty("_MainTex"))
+                    material.SetTexture("_MainTex", texture);
+                else if (material.HasProperty("_BaseMap"))
+                    material.SetTexture("_BaseMap", texture);
             }
         }
     }
 
     private void ScatterOnBar()
     {
-        // Puzzleteile mischen
         List<Transform> shuffled = new List<Transform>(pieces);
 
         for (int i = shuffled.Count - 1; i > 0; i--)
         {
             int random = Random.Range(0, i + 1);
-
             Transform temp = shuffled[i];
             shuffled[i] = shuffled[random];
             shuffled[random] = temp;
         }
 
-        // Anzahl der Teile pro Reihe
         int columns = 6;
-
         float spacingX = width + 0.03f;
         float spacingY = height + 0.03f;
 
@@ -139,24 +134,28 @@ public class JigsawGameManager : MonoBehaviour
             int row = i / columns;
             int col = i % columns;
 
-            shuffled[i].SetParent(pieceHolder);
+            // WICHTIG: SetParent mit falscher/korrekter Welt-Positioning
+            shuffled[i].SetParent(pieceHolder, false);
 
             shuffled[i].localPosition = new Vector3(
                 startX + col * spacingX,
                 -row * spacingY,
-                0f);
+                -1f); // Vor dem Holder platzieren
+
+            // Skalierung nach Parent-Wechsel absichern
+            shuffled[i].localScale = new Vector3(width, height, 1);
         }
     }
 
     private void UpdateBorder()
     {
         LineRenderer lineRenderer = gameHolder.GetComponent<LineRenderer>();
+        if (lineRenderer == null) return;
 
         float halfWidth = (width * dimensions.x) / 2f;
         float halfHeight = (height * dimensions.y) / 2f;
 
         lineRenderer.positionCount = 5;
-
         lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, 0));
         lineRenderer.SetPosition(1, new Vector3(halfWidth, halfHeight, 0));
         lineRenderer.SetPosition(2, new Vector3(halfWidth, -halfHeight, 0));
@@ -178,26 +177,23 @@ public class JigsawGameManager : MonoBehaviour
                 Camera.main.ScreenToWorldPoint(mousePos),
                 Vector2.zero);
 
-            if (hit)
+            if (hit && hit.transform != null)
             {
                 draggingPiece = hit.transform;
 
-              
-                draggingPiece.position += Vector3.forward;
+                // Bringt das Teil beim Ziehen optisch ganz nach vorne (-2f)
+                Vector3 pos = draggingPiece.position;
+                pos.z = -2f;
+                draggingPiece.position = pos;
 
-                offset = draggingPiece.position -
-                         Camera.main.ScreenToWorldPoint(mousePos);
-
+                offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(mousePos);
                 offset.z = 0;
             }
         }
 
         if (draggingPiece != null)
         {
-            Vector3 mouseWorld =
-                Camera.main.ScreenToWorldPoint(
-                    Mouse.current.position.ReadValue());
-
+            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             mouseWorld.z = draggingPiece.position.z;
 
             draggingPiece.position = mouseWorld + offset;
@@ -205,7 +201,6 @@ public class JigsawGameManager : MonoBehaviour
             if (Mouse.current.leftButton.wasReleasedThisFrame)
             {
                 SnapAndDisableIfCorrect();
-
                 draggingPiece = null;
             }
         }
@@ -218,25 +213,39 @@ public class JigsawGameManager : MonoBehaviour
         int col = index % dimensions.x;
         int row = index / dimensions.x;
 
-        Vector3 target = new Vector3(
+        // Ziel-Position lokal im gameHolder
+        Vector3 localTarget = new Vector3(
             (-width * dimensions.x / 2f) + (width * col) + width / 2f,
             (-height * dimensions.y / 2f) + (height * row) + height / 2f,
             -1f);
 
-        if (Vector2.Distance(draggingPiece.localPosition, target) < width / 2f)
+        // Welt-Zielposition berechnen (unabhängig vom aktuellen Parent!)
+        Vector3 worldTarget = gameHolder.TransformPoint(localTarget);
+
+        // Abstand anhand der echten Welt-Koordinaten prüfen
+        if (Vector2.Distance(draggingPiece.position, worldTarget) < width / 2f)
         {
             draggingPiece.SetParent(gameHolder);
+            draggingPiece.localPosition = localTarget;
+            draggingPiece.localScale = new Vector3(width, height, 1);
 
-            draggingPiece.localPosition = target;
-
-            draggingPiece.GetComponent<BoxCollider2D>().enabled = false;
+            // Deaktiviere den Collider, damit man es nicht mehr ziehen kann
+            Collider2D collider = draggingPiece.GetComponent<Collider2D>();
+            if (collider != null) collider.enabled = false;
 
             piecesCorrect++;
 
             if (piecesCorrect >= pieces.Count)
             {
-                playAgainButton.SetActive(true);
+                if (playAgainButton != null) playAgainButton.SetActive(true);
             }
+        }
+        else
+        {
+            // Falls falsch abgelegt: wieder auf Z = -1 zurücksetzen
+            Vector3 pos = draggingPiece.position;
+            pos.z = -1f;
+            draggingPiece.position = pos;
         }
     }
 }
