@@ -834,8 +834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Which Greek column style has curled shapes at the top?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0347b8519a2eb724b9abaa7b8ac745c0, type: 2}
+  m_sharedMaterial: {fileID: -5418252706200110223, guid: 0347b8519a2eb724b9abaa7b8ac745c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
