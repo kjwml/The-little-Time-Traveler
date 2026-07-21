@@ -12,4 +12,10 @@ public class WordManager : MonoBehaviour
         currentWord += letter;
         wordText.text = currentWord;
     }
+
+    public void ResetWord()
+    {
+        currentWord = "";  
+        wordText.text = ""; 
+    }
 }
