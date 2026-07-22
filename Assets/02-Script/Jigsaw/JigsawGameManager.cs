@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -17,15 +18,16 @@ public class JigsawGameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject playAgainButton;
 
+    [Header("Puzzle Dimensions")]
+    [SerializeField] private Vector2 totalPuzzleSize = new Vector2(10f, 10f);
+
     private List<Transform> pieces;
     private Vector2Int dimensions;
-
     private float width;
     private float height;
 
-    private Transform draggingPiece;
+    private Transform draggingPiece = null;
     private Vector3 offset;
-
     private int piecesCorrect;
 
     void Start()
@@ -38,10 +40,12 @@ public class JigsawGameManager : MonoBehaviour
         dimensions = GetDimensions(puzzleTexture, difficulty);
 
         CreateJigsawPieces(puzzleTexture);
-        ScatterOnBar();
+        Scatter();
         UpdateBorder();
 
         piecesCorrect = 0;
+
+        if (playAgainButton != null) playAgainButton.SetActive(false);
     }
 
     public static class PuzzleData
@@ -69,19 +73,20 @@ public class JigsawGameManager : MonoBehaviour
 
     void CreateJigsawPieces(Texture2D texture)
     {
-        width = 1f / dimensions.x;
-        height = 1f / dimensions.y;
+        width = totalPuzzleSize.x / dimensions.x;
+        height = totalPuzzleSize.y / dimensions.y;
 
         for (int row = 0; row < dimensions.y; row++)
         {
             for (int col = 0; col < dimensions.x; col++)
             {
+               
                 Transform piece = Instantiate(piecePrefab, gameHolder);
 
                 piece.localPosition = new Vector3(
-                    (-width * dimensions.x / 2f) + (width * col) + width / 2f,
-                    (-height * dimensions.y / 2f) + (height * row) + height / 2f,
-                    -1f);
+                    (-totalPuzzleSize.x / 2f) + (width * col) + (width / 2f),
+                    (-totalPuzzleSize.y / 2f) + (height * row) + (height / 2f),
+                    -0.1f);
 
                 piece.localScale = new Vector3(width, height, 1);
                 piece.name = $"Piece {(row * dimensions.x) + col}";
@@ -102,7 +107,6 @@ public class JigsawGameManager : MonoBehaviour
 
                 Material material = piece.GetComponent<MeshRenderer>().material;
 
-                // Unterstützung für Standard-Shader & URP
                 if (material.HasProperty("_MainTex"))
                     material.SetTexture("_MainTex", texture);
                 else if (material.HasProperty("_BaseMap"))
@@ -111,39 +115,24 @@ public class JigsawGameManager : MonoBehaviour
         }
     }
 
-    private void ScatterOnBar()
+    private void Scatter()
     {
-        List<Transform> shuffled = new List<Transform>(pieces);
+        float orthoHeight = Camera.main.orthographicSize;
+        float screenAspect = (float)Screen.width / Screen.height;
+        float orthoWidth = screenAspect * orthoHeight;
 
-        for (int i = shuffled.Count - 1; i > 0; i--)
+        float pieceWidth = width * gameHolder.localScale.x;
+        float pieceHeight = height * gameHolder.localScale.y;
+
+        orthoHeight -= pieceHeight;
+        orthoWidth -= pieceWidth;
+
+        foreach (Transform piece in pieces)
         {
-            int random = Random.Range(0, i + 1);
-            Transform temp = shuffled[i];
-            shuffled[i] = shuffled[random];
-            shuffled[random] = temp;
-        }
+            float x = Random.Range(-orthoWidth, orthoWidth);
+            float y = Random.Range(-orthoHeight, orthoHeight);
 
-        int columns = 6;
-        float spacingX = width + 0.03f;
-        float spacingY = height + 0.03f;
-
-        float startX = -((columns - 1) * spacingX) / 2f;
-
-        for (int i = 0; i < shuffled.Count; i++)
-        {
-            int row = i / columns;
-            int col = i % columns;
-
-            // WICHTIG: SetParent mit falscher/korrekter Welt-Positioning
-            shuffled[i].SetParent(pieceHolder, false);
-
-            shuffled[i].localPosition = new Vector3(
-                startX + col * spacingX,
-                -row * spacingY,
-                -1f); // Vor dem Holder platzieren
-
-            // Skalierung nach Parent-Wechsel absichern
-            shuffled[i].localScale = new Vector3(width, height, 1);
+            piece.position = new Vector3(x, y, gameHolder.position.z - 0.1f);
         }
     }
 
@@ -152,100 +141,113 @@ public class JigsawGameManager : MonoBehaviour
         LineRenderer lineRenderer = gameHolder.GetComponent<LineRenderer>();
         if (lineRenderer == null) return;
 
-        float halfWidth = (width * dimensions.x) / 2f;
-        float halfHeight = (height * dimensions.y) / 2f;
+        float halfWidth = totalPuzzleSize.x / 2f;
+        float halfHeight = totalPuzzleSize.y / 2f;
+
+        float borderZ = 0f;
 
         lineRenderer.positionCount = 5;
-        lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, 0));
-        lineRenderer.SetPosition(1, new Vector3(halfWidth, halfHeight, 0));
-        lineRenderer.SetPosition(2, new Vector3(halfWidth, -halfHeight, 0));
-        lineRenderer.SetPosition(3, new Vector3(-halfWidth, -halfHeight, 0));
-        lineRenderer.SetPosition(4, new Vector3(-halfWidth, halfHeight, 0));
 
-        lineRenderer.startWidth = 0.05f;
-        lineRenderer.endWidth = 0.05f;
+        lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, borderZ));
+        lineRenderer.SetPosition(1, new Vector3(halfWidth, halfHeight, borderZ));
+        lineRenderer.SetPosition(2, new Vector3(halfWidth, -halfHeight, borderZ));
+        lineRenderer.SetPosition(3, new Vector3(-halfWidth, -halfHeight, borderZ));
+        lineRenderer.SetPosition(4, new Vector3(-halfWidth, halfHeight, borderZ));
+
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
+
         lineRenderer.enabled = true;
     }
 
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = 0f; 
+
+        
+        if (Input.GetMouseButtonDown(0))
         {
-            Vector2 mousePos = Mouse.current.position.ReadValue();
+            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPos, Vector2.zero);
 
-            RaycastHit2D hit = Physics2D.Raycast(
-                Camera.main.ScreenToWorldPoint(mousePos),
-                Vector2.zero);
-
-            if (hit && hit.transform != null)
+            if (hit && pieces.Contains(hit.transform))
             {
                 draggingPiece = hit.transform;
+                offset = draggingPiece.position - mouseWorldPos;
 
-                // Bringt das Teil beim Ziehen optisch ganz nach vorne (-2f)
-                Vector3 pos = draggingPiece.position;
-                pos.z = -2f;
-                draggingPiece.position = pos;
-
-                offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(mousePos);
-                offset.z = 0;
+                draggingPiece.position = new Vector3(draggingPiece.position.x, draggingPiece.position.y, gameHolder.position.z - 0.5f);
             }
         }
 
         if (draggingPiece != null)
         {
-            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            mouseWorld.z = draggingPiece.position.z;
+            Vector3 newPosition = mouseWorldPos + offset;
+            newPosition.z = gameHolder.position.z - 0.5f;
+            draggingPiece.position = newPosition;
+        }
 
-            draggingPiece.position = mouseWorld + offset;
-
-            if (Mouse.current.leftButton.wasReleasedThisFrame)
-            {
-                SnapAndDisableIfCorrect();
-                draggingPiece = null;
-            }
+        if (draggingPiece != null && Input.GetMouseButtonUp(0))
+        {
+            SnapAndDisableIfCorrect();
+            draggingPiece = null;
         }
     }
 
     private void SnapAndDisableIfCorrect()
     {
-        int index = pieces.IndexOf(draggingPiece);
+        int pieceIndex = pieces.IndexOf(draggingPiece);
 
-        int col = index % dimensions.x;
-        int row = index / dimensions.x;
+        int col = pieceIndex % dimensions.x;
+        int row = pieceIndex / dimensions.x;
 
-        // Ziel-Position lokal im gameHolder
-        Vector3 localTarget = new Vector3(
-            (-width * dimensions.x / 2f) + (width * col) + width / 2f,
-            (-height * dimensions.y / 2f) + (height * row) + height / 2f,
-            -1f);
+        Vector3 targetLocalPosition = new Vector3(
+            (-totalPuzzleSize.x / 2f) + (width * col) + (width / 2f),
+            (-totalPuzzleSize.y / 2f) + (height * row) + (height / 2f),
+            -0.1f);
 
-        // Welt-Zielposition berechnen (unabhängig vom aktuellen Parent!)
-        Vector3 worldTarget = gameHolder.TransformPoint(localTarget);
+        float snapTolerance = width * 0.4f;
 
-        // Abstand anhand der echten Welt-Koordinaten prüfen
-        if (Vector2.Distance(draggingPiece.position, worldTarget) < width / 2f)
+        if (Vector3.Distance((Vector2)draggingPiece.localPosition, (Vector2)targetLocalPosition) < snapTolerance)
         {
-            draggingPiece.SetParent(gameHolder);
-            draggingPiece.localPosition = localTarget;
-            draggingPiece.localScale = new Vector3(width, height, 1);
+            draggingPiece.localPosition = targetLocalPosition;
 
-            // Deaktiviere den Collider, damit man es nicht mehr ziehen kann
-            Collider2D collider = draggingPiece.GetComponent<Collider2D>();
-            if (collider != null) collider.enabled = false;
+            if (draggingPiece.TryGetComponent<BoxCollider2D>(out var collider))
+            {
+                collider.enabled = false;
+            }
 
             piecesCorrect++;
 
-            if (piecesCorrect >= pieces.Count)
+            if (piecesCorrect == pieces.Count)
             {
-                if (playAgainButton != null) playAgainButton.SetActive(true);
+                if (playAgainButton != null)
+                    playAgainButton.SetActive(true);
             }
         }
         else
         {
-            // Falls falsch abgelegt: wieder auf Z = -1 zurücksetzen
-            Vector3 pos = draggingPiece.position;
-            pos.z = -1f;
-            draggingPiece.position = pos;
+            Vector3 localPos = draggingPiece.localPosition;
+            localPos.z = -0.1f;
+            draggingPiece.localPosition = localPos;
         }
+    }
+
+    public void RestartGame()
+    {
+        foreach (Transform piece in pieces)
+        {
+            if (piece != null)
+                Destroy(piece.gameObject);
+        }
+
+        pieces.Clear();
+
+        if (gameHolder.TryGetComponent<LineRenderer>(out var lineRenderer))
+        {
+            lineRenderer.enabled = false;
+        }
+
+        if (playAgainButton != null)
+            playAgainButton.SetActive(false);
     }
 }

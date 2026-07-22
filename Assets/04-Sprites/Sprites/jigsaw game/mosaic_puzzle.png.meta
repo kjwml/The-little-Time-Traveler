@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 96bcf75b3c7c6a7448ed9f6f0e92f925
+guid: 128605284e6a4a0498a4bbcef85c0b19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6170711661990080502
-    second: Eingabestone_greek_0
+      213: 6688897106939649750
+    second: mosaic_puzzle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eingabestone_greek_0
+      name: mosaic_puzzle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 581
-        height: 137
+        width: 632
+        height: 399
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ff67401095c2a550800000000000000
-      internalID: 6170711661990080502
+      spriteID: 6de964eba7cb3dc50800000000000000
+      internalID: 6688897106939649750
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Eingabestone_greek_0: 6170711661990080502
+      mosaic_puzzle_0: 6688897106939649750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
