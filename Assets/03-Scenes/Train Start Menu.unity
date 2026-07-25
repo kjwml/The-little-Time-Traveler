@@ -770,6 +770,7 @@ GameObject:
   - component: {fileID: 940258078}
   - component: {fileID: 940258077}
   - component: {fileID: 940258081}
+  - component: {fileID: 940258082}
   m_Layer: 5
   m_Name: StationButton
   m_TagString: Untagged
@@ -840,7 +841,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 940258078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 940258082}
+        m_TargetAssemblyTypeName: TrainTextAnzeige, Assembly-CSharp
+        m_MethodName: Switch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &940258078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,6 +917,22 @@ MonoBehaviour:
     - {fileID: 11149757}
     - {fileID: 413780251}
     - {fileID: 966204327}
+--- !u!114 &940258082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940258075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d8f3dac45a04419b05bb282d7de5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrainTextAnzeige
+  textGreek: {fileID: 965996486}
+  buttonGreek: {fileID: 966204327}
+  textGothic: {fileID: 11149756}
+  buttonGothic: {fileID: 413780251}
 --- !u!1 &949008544
 GameObject:
   m_ObjectHideFlags: 0

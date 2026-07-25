@@ -12,6 +12,15 @@ public class TrainTextAnzeige : MonoBehaviour
 
     private bool isGreekActive = true;
 
+    private void Start()
+    {
+        
+        textGreek.SetActive(true);
+        buttonGreek.SetActive(true);
+        textGothic.SetActive(false);
+        buttonGothic.SetActive(false);
+    }
+
     public void Switch()
     {
         isGreekActive = !isGreekActive;
@@ -20,7 +29,6 @@ public class TrainTextAnzeige : MonoBehaviour
         {
             textGreek.SetActive(true);
             buttonGreek.SetActive(true);
-            textG.SetActive(false);
             textGothic.SetActive(false);
             buttonGothic.SetActive(false);
         }
@@ -28,7 +36,6 @@ public class TrainTextAnzeige : MonoBehaviour
         {
             textGreek.SetActive(false);
             buttonGreek.SetActive(false);
-            textG.SetActive(true);
             textGothic.SetActive(true);
             buttonGothic.SetActive(true);
         }
