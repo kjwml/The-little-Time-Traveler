@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/03-Scenes/Train Start Menu.unity
     guid: 374f04ed8c715453c882e303165ec4b2
   - enabled: 1
+    path: Assets/03-Scenes/GA Train Interlude Scene.unity
+    guid: 02725148974ab4bf486f11651e77254f
+  - enabled: 1
     path: Assets/03-Scenes/Gameplay_griechischeAntike.unity
     guid: fe72c5d5714f5214899c29a22e331cce
-  - enabled: 1
-    path: Assets/03-Scenes/Greyboxing/Screen_Diary.unity
-    guid: 528790532ea7193479d739e110143f38
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
