@@ -17,6 +17,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/03-Scenes/Gameplay_griechischeAntike.unity
     guid: fe72c5d5714f5214899c29a22e331cce
+  - enabled: 1
+    path: Assets/03-Scenes/Jigsaw Amphore.unity
+    guid: a3c64bbf83bcdc449b837bee65e6dbfe
+  - enabled: 1
+    path: Assets/03-Scenes/Jigsaw Mosaic.unity
+    guid: d6c24c1ea6220804ab84179d4f137599
+  - enabled: 1
+    path: Assets/03-Scenes/Jigsaw Statue.unity
+    guid: 8862fff51b4d8d64a812d6ad835a0aca
+  - enabled: 1
+    path: Assets/03-Scenes/Vocabeltest Column.unity
+    guid: b054c4978d6f11e44954221b19c8b4c6
+  - enabled: 1
+    path: Assets/03-Scenes/Vocabeltest Olive Wreath.unity
+    guid: 9d396321b51e8b448a9a6338d0c2bd5a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
