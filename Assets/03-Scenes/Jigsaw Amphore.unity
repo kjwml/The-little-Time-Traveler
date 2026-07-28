@@ -909,18 +909,6 @@ MonoBehaviour:
           m_StringArgument: amphora
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 847847313}
-        m_TargetAssemblyTypeName: GameState, Assembly-CSharp
-        m_MethodName: SetItemUnlocked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Amphora
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &847847306
 MonoBehaviour:
   m_ObjectHideFlags: 0
