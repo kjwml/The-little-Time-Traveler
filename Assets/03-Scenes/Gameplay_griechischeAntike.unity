@@ -1476,8 +1476,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7266209143440167713, guid: c6beb87201aa7714e95de06a6005ecbd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1511,8 +1511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 40.41504, y: -119.63019}
-  m_SizeDelta: {x: 401.3881, y: 75.2602}
+  m_AnchoredPosition: {x: 0, y: -119.63019}
+  m_SizeDelta: {x: 599.2328, y: 75.2602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &676573005
 AudioSource:
@@ -2809,8 +2809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.6000061, y: -38}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -38}
+  m_SizeDelta: {x: 701.2975, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333353180
 MonoBehaviour:
@@ -2834,8 +2834,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_FontSize: 26
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -2845,7 +2845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: step into Train
+  m_Text: Congratulations! You can now enter the train.
 --- !u!222 &1333353181
 CanvasRenderer:
   m_ObjectHideFlags: 0
