@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SavedVariables
   m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.VariablesAsset
   _data:
-    _json: '{"declarations":{"Kind":"Flow","collection":{"$content":[{"name":"AmphoraDone","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+    _json: '{"declarations":{"Kind":"Flow","collection":{"$content":[{"name":"amphoraDone","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
