@@ -841,9 +841,11 @@ GameObject:
   - component: {fileID: 847847307}
   - component: {fileID: 847847306}
   - component: {fileID: 847847305}
+  - component: {fileID: 847847313}
   - component: {fileID: 847847311}
   - component: {fileID: 847847310}
   - component: {fileID: 847847309}
+  - component: {fileID: 847847312}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -896,16 +898,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 471767689}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_StringArgument: amphora
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 847847313}
+        m_TargetAssemblyTypeName: GameState, Assembly-CSharp
+        m_MethodName: SetItemUnlocked
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amphora
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &847847306
 MonoBehaviour:
@@ -1093,6 +1107,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &847847312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847847304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30045e4970f3409cb52bfee30080b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameProgress
+--- !u!114 &847847313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847847304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ba3ce1ac5ec44dcb6c464c201be4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameState
 --- !u!1 &972381842
 GameObject:
   m_ObjectHideFlags: 0
