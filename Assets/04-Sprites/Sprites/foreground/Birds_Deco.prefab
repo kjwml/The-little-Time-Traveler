@@ -191,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043277765266507361}
+  - component: {fileID: 3816962357294823564}
   m_Layer: 0
   m_Name: Birds_Deco
   m_TagString: Untagged
@@ -211,14 +212,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 820371595463462301}
   - {fileID: 8281819660138188405}
-  - {fileID: 4432797049364215151}
-  - {fileID: 3024566571042495353}
   - {fileID: 5890135151644561344}
+  - {fileID: 3024566571042495353}
   - {fileID: 4716462984851623752}
+  - {fileID: 820371595463462301}
+  - {fileID: 4432797049364215151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3816962357294823564
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571407679219914554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8b022fcd43e644b45bbdfb1898771ca5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6442826727087417403
 GameObject:
   m_ObjectHideFlags: 0
