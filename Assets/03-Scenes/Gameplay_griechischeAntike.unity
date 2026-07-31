@@ -2072,28 +2072,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8965149995184960916, guid: 2ca98c1848a254a0db52b20c7b5c83e3, type: 3}
   m_PrefabInstance: {fileID: 563394701}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &808117314 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7426731178558597753, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &808117317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808117314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.Variables
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"helpsheet","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 0}
 --- !u!1 &815004304
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,11 +4621,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 390681412223952506, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 110.22705
+      value: 166
       objectReference: {fileID: 0}
     - target: {fileID: 390681412223952506, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 122.17822
+      value: 165
       objectReference: {fileID: 0}
     - target: {fileID: 482293257225639038, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
@@ -4822,10 +4800,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3880540521692256244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       insertIndex: -1
       addedObject: {fileID: 676573004}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7426731178558597753, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 808117317}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
 --- !u!1 &2520466111762878356 stripped
 GameObject:
