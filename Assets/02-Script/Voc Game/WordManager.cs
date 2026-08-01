@@ -18,4 +18,9 @@ public class WordManager : MonoBehaviour
         currentWord = "";  
         wordText.text = ""; 
     }
+
+public string GetCurrentWord()
+{
+    return currentWord;
+}
 }
