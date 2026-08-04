@@ -487,6 +487,95 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &138413642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138413643}
+  - component: {fileID: 138413645}
+  - component: {fileID: 138413644}
+  m_Layer: 5
+  m_Name: 'templeText '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &138413643
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138413642}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 261.73016, y: -4.1716}
+  m_SizeDelta: {x: 72.9968, y: 255.5637}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &138413644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138413642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Greek temples weren''t places where people gathered every day. They were
+    built to honor the gods and protect their statues inside, while ceremonies often
+    took place outside!
+
+    Most temples were built from strong materials such as
+    marble or limestone so they would last for centuries. Their rectangular shape,
+    tall columns, and triangular roof made them easy to recognize. Artists also decorated
+    temples with carved sculptures called reliefs and long decorative bands called
+    friezes, which often showed scenes from mythology or important events.
+
+'
+--- !u!222 &138413645
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138413642}
+  m_CullTransparentMesh: 1
 --- !u!1 &146776186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +3256,94 @@ Transform:
   - {fileID: 1974051182}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1286325778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286325779}
+  - component: {fileID: 1286325781}
+  - component: {fileID: 1286325780}
+  m_Layer: 5
+  m_Name: 'columnText '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1286325779
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286325778}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553268}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 272.85028, y: -0.6467}
+  m_SizeDelta: {x: 414.09863, y: 177.93}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1286325780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286325778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Greek builders created three famous column styles. They supported the
+    roofs of temples and public buildings while also making them beautiful.
+
+    The
+    Doric column is the simplest style, with a plain top and a strong appearance.
+    The Ionic column is easy to recognize because of the curled shapes, called volutes,
+    at the top. The Corinthian column is the most decorative, with carved leaves
+    that resemble the acanthus plant.
+
+'
+--- !u!222 &1286325781
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286325778}
+  m_CullTransparentMesh: 1
 --- !u!224 &1303509099 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3880540521692256244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
@@ -4229,6 +4406,89 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1164188254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1860409161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1860409162}
+  - component: {fileID: 1860409164}
+  - component: {fileID: 1860409163}
+  m_Layer: 5
+  m_Name: amphoraText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1860409162
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860409161}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553271}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 249.63022, y: -9.005676}
+  m_SizeDelta: {x: 272.8141, y: 123.08}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1860409163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860409161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: An amphora is a large clay jar that was used throughout Ancient Greece.
+    Ancient Greeks used amphorae to carry olive oil, wine, water, and grain. Many
+    were painted with exciting stories about heroes, gods, sports, and everyday life.
+    Early Greek vases had simple patterns, but later artists painted detailed people
+    and myths using black-figure and red-figure styles!
+--- !u!222 &1860409164
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860409161}
+  m_CullTransparentMesh: 1
 --- !u!1 &1885153196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,6 +4834,90 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1948115290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948115291}
+  - component: {fileID: 1948115293}
+  - component: {fileID: 1948115292}
+  m_Layer: 5
+  m_Name: wreathText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1948115291
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948115290}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553267}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 241.42355, y: -15.636475}
+  m_SizeDelta: {x: 203.2312, y: 130.8416}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1948115292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948115290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Instead of receiving gold medals or trophies, winners of the Ancient Olympic
+    Games were crowned with a wreath woven from olive branches. Wreaths were not
+    only worn by athletes, but also appeared in religious festivals, celebrations,
+    and works of art as a symbol of great honour, wisdom, peace, achievement, and
+    respect. Olive trees were highly valued in Greece as they provided food, oil,
+    wood, and shade. \n"
+--- !u!222 &1948115293
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948115290}
+  m_CullTransparentMesh: 1
 --- !u!1 &1949741121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +5014,206 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5097545525182305748, guid: 685053a8b92d24d439a8a5c378f88324, type: 3}
   m_PrefabInstance: {fileID: 2817505820438723132}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978642335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1978642336}
+  - component: {fileID: 1978642338}
+  - component: {fileID: 1978642337}
+  m_Layer: 5
+  m_Name: 'mosaicText '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1978642336
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978642335}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 247, y: -8}
+  m_SizeDelta: {x: 144.5675, y: 182.4619}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1978642337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978642335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Artists created mosaics by placing hundreds or even thousands of small
+    pieces of stone, pottery, or glass together to make colorful and long lasting
+    images. Every small piece had to be placed by hand, requiring great patience
+    and skill. Although the Ancient Greeks created many paintings, very few have
+    survived because they were often painted on wood or walls that disappeared over
+    time. Because they survived, they help historians understand what Greek paintings
+    may have looked like.
+--- !u!222 &1978642338
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978642335}
+  m_CullTransparentMesh: 1
+--- !u!224 &2007553266 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6954718175028200547, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2007553267 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7700178920032108073, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2007553268 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1155408905575221244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2007553269 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7225581186554137520, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2007553270 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6024600948422754276, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2007553271 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6240953701494377734, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2106954801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106954802}
+  - component: {fileID: 2106954804}
+  - component: {fileID: 2106954803}
+  m_Layer: 5
+  m_Name: statueText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2106954802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106954801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2007553269}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 269.25598, y: -1.114624}
+  m_SizeDelta: {x: 334.35254, y: 190.2466}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2106954803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106954801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Greek statues changed a lot over time. Early statues from the Archaic Period
+    stood stiff and straight. Many were created as grave markers or to honor the
+    gods. During the Classical Period, artists became interested in making people
+    look more natural. Later, during the Hellenistic Period, sculptures became even
+    more expressive, with carved detailed facial expressions and dramatic poses!
+    The Romans admired Greek sculptures so much that they created many copies, helping
+    preserve artworks that would otherwise have been lost.
+--- !u!222 &2106954804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106954801}
+  m_CullTransparentMesh: 1
 --- !u!1001 &141485009077939453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4995,6 +5539,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 16428776}
+    - target: {fileID: 1155408905575221244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -395
+      objectReference: {fileID: 0}
     - target: {fileID: 2142430049858791759, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5188,6 +5736,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3880540521692256244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       insertIndex: -1
       addedObject: {fileID: 676573004}
+    - targetCorrespondingSourceObject: {fileID: 6240953701494377734, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860409162}
+    - targetCorrespondingSourceObject: {fileID: 6024600948422754276, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1978642336}
+    - targetCorrespondingSourceObject: {fileID: 7225581186554137520, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2106954802}
+    - targetCorrespondingSourceObject: {fileID: 1155408905575221244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1286325779}
+    - targetCorrespondingSourceObject: {fileID: 7700178920032108073, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948115291}
+    - targetCorrespondingSourceObject: {fileID: 6954718175028200547, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138413643}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2573454716907029762, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       insertIndex: -1
