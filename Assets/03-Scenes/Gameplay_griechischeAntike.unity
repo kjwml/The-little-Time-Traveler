@@ -2578,6 +2578,7 @@ GameObject:
   - component: {fileID: 1015384133}
   - component: {fileID: 1015384135}
   - component: {fileID: 1015384134}
+  - component: {fileID: 1015384136}
   m_Layer: 0
   m_Name: statue_0
   m_TagString: Untagged
@@ -2694,6 +2695,52 @@ MonoBehaviour:
     _objectReferences:
     - {fileID: 1405895199}
     - {fileID: 1405895200}
+--- !u!61 &1015384136
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015384131}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.68, y: 3.96}
+    newSize: {x: 1.68, y: 3.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.68, y: 3.96}
+  m_EdgeRadius: 0
 --- !u!1 &1033849540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7572866503471637966, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
