@@ -2130,6 +2130,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2817652557659923793, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &707416620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1197462026995367603, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707416617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &749592049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878367}
-  dialogueText: {fileID: 2520466111762878366}
+  dialogueText: {fileID: 0}
   dialogue:
   - Instead of receiving gold medals or trophies, winners of the Ancient Olympic
     Games were crowned with a wreath woven from olive branches
@@ -2264,7 +2275,7 @@ MonoBehaviour:
     and shade.  '
   - 'Did you know? Olive trees were connected to the goddess Athena, who, according
     to Greek mythology, gifted the olive tree to the people of Athens! '
-  contButton: {fileID: 2520466111762878356}
+  contButton: {fileID: 0}
   wordSpeed: 0.05
 --- !u!70 &794906235
 CapsuleCollider2D:
@@ -2830,11 +2841,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.68, y: 3.96}
   m_EdgeRadius: 0
---- !u!1 &1033849540 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7572866503471637966, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121106570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,7 +2873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878365}
-  dialogueText: {fileID: 2520466111762878364}
+  dialogueText: {fileID: 0}
   dialogue:
   - Artists created mosaics by placing hundreds or even thousands of small pieces
     of stone, pottery, or glass together to make colorful and long lasting images.
@@ -2878,7 +2884,7 @@ MonoBehaviour:
     have looked like.
   - "Did you know? A single mosaic could contain thousands of tiny pieces called
     \u2018tesserae.\u2019 "
-  contButton: {fileID: 2520466111762878363}
+  contButton: {fileID: 0}
   wordSpeed: 0.05
 --- !u!70 &1121106572
 CapsuleCollider2D:
@@ -3692,7 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878359}
-  dialogueText: {fileID: 2520466111762878358}
+  dialogueText: {fileID: 0}
   dialogue:
   - 'Greek builders created three famous column styles. They supported the roofs
     of temples and public buildings while also making them beautiful. '
@@ -3703,7 +3709,7 @@ MonoBehaviour:
     the acanthus plant. '
   - ' Did you know?  Architects still use these column styles on important buildings
     today! '
-  contButton: {fileID: 2520466111762878357}
+  contButton: {fileID: 0}
   wordSpeed: 0.05
 --- !u!70 &1470053650
 CapsuleCollider2D:
@@ -4327,17 +4333,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3553323299694296205, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1848058713 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5485290043294094477, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &1850889718
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,7 +4516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878362}
-  dialogueText: {fileID: 2520466111762878361}
+  dialogueText: {fileID: 0}
   dialogue:
   - Greek statues changed a lot over time. Early statues from the Archaic Period
     stood stiff and straight. Many were created as grave markers or to honor the
@@ -4534,7 +4529,7 @@ MonoBehaviour:
     preserve artworks that would otherwise have been lost. '
   - 'Did you know? Many Greek statues were originally painted with bright colors.
     They weren''t plain white like we often imagine today! '
-  contButton: {fileID: 2520466111762878360}
+  contButton: {fileID: 0}
   wordSpeed: 0.05
 --- !u!70 &1885153198
 CapsuleCollider2D:
@@ -5225,11 +5220,11 @@ PrefabInstance:
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: contButton
       value: 
-      objectReference: {fileID: 1033849540}
+      objectReference: {fileID: 0}
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 1848058713}
+      objectReference: {fileID: 0}
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: dialoguePanel
       value: 
@@ -5543,14 +5538,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -395
       objectReference: {fileID: 0}
+    - target: {fileID: 1975317925147537902, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1050.419
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975317925147537902, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130.5129
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975317925147537902, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.3555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975317925147537902, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.1179
+      objectReference: {fileID: 0}
     - target: {fileID: 2142430049858791759, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1470053649}
     - target: {fileID: 2270174017105314081, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 707416620}
+    - target: {fileID: 2270174017105314081, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 645211425}
+    - target: {fileID: 2577586564867319591, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3544054595817305716, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5638,6 +5657,30 @@ PrefabInstance:
     - target: {fileID: 3880540521692256244, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_Color.b
+      value: 0.054802395
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_Color.g
+      value: 0.09713579
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16226411
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070551882663651774, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4591598742938143577, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
@@ -5727,6 +5770,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 62
       objectReference: {fileID: 0}
+    - target: {fileID: 9160220632471947034, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -743.0617
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160220632471947034, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -864.6172
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160220632471947034, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160220632471947034, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -359.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5768,85 +5827,21 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 446075633}
   m_SourcePrefab: {fileID: 100100000, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
---- !u!1 &2520466111762878356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6952598473330710249, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2520466111762878357 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4426130915736432808, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2520466111762878358 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6097003535200823081, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &2520466111762878359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 328598871664735623, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2520466111762878360 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5796700209333607208, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2520466111762878361 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1792616783387299539, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &2520466111762878362 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2072209874003756872, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2520466111762878363 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1718878696590162037, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2520466111762878364 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 805946100091822654, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &2520466111762878365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3327771736705067866, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2520466111762878366 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 321937650587568088, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
-  m_PrefabInstance: {fileID: 2520466111762878355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &2520466111762878367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4431281612467736811, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
