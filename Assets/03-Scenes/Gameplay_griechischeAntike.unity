@@ -396,6 +396,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &87512190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4607208350141509494, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107147482
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +926,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &371250440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1742770640275664421, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &394723803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1788,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &662182196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1358937593564641278, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+--- !u!114 &667631496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4232256822534986340, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &676573000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,6 +2270,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &772327107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3435263141614220333, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+--- !u!1 &794558344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1087270990459067081, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+  m_PrefabInstance: {fileID: 847305981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &794906233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,7 +2318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878367}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 772327107}
   dialogue:
   - Instead of receiving gold medals or trophies, winners of the Ancient Olympic
     Games were crowned with a wreath woven from olive branches
@@ -2275,7 +2329,7 @@ MonoBehaviour:
     and shade.  '
   - 'Did you know? Olive trees were connected to the goddess Athena, who, according
     to Greek mythology, gifted the olive tree to the people of Athens! '
-  contButton: {fileID: 0}
+  contButton: {fileID: 1101970688}
   wordSpeed: 0.05
 --- !u!70 &794906235
 CapsuleCollider2D:
@@ -2575,6 +2629,112 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &847305981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1637702563309371738, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_Name
+      value: Settings_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637702563309371738, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677738712625730986, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+--- !u!1 &853723945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5388141030910304939, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &944713469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,6 +3001,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.68, y: 3.96}
   m_EdgeRadius: 0
+--- !u!1 &1101970688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2200419475480443760, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121106570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +3038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878365}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 2071882835}
   dialogue:
   - Artists created mosaics by placing hundreds or even thousands of small pieces
     of stone, pottery, or glass together to make colorful and long lasting images.
@@ -2884,7 +3049,7 @@ MonoBehaviour:
     have looked like.
   - "Did you know? A single mosaic could contain thousands of tiny pieces called
     \u2018tesserae.\u2019 "
-  contButton: {fileID: 0}
+  contButton: {fileID: 87512190}
   wordSpeed: 0.05
 --- !u!70 &1121106572
 CapsuleCollider2D:
@@ -3032,6 +3197,11 @@ Transform:
   - {fileID: 1850889721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1173720589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3161964690734993394, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1175481840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3570,6 +3740,11 @@ Transform:
   - {fileID: 794906237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1434027478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1637702563309371738, guid: 9be3cb01070b4ed49a3e4f30a5842c6b, type: 3}
+  m_PrefabInstance: {fileID: 847305981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1450959433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7568433593765544228, guid: 6bd2955a55d014fdeab99c7313f9c101, type: 3}
@@ -3679,7 +3854,7 @@ GameObject:
   - component: {fileID: 1470053650}
   - component: {fileID: 1470053649}
   m_Layer: 0
-  m_Name: character_male_amphora_greek_columns
+  m_Name: character_male_greek_columns
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3698,7 +3873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878359}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 667631496}
   dialogue:
   - 'Greek builders created three famous column styles. They supported the roofs
     of temples and public buildings while also making them beautiful. '
@@ -3709,7 +3884,7 @@ MonoBehaviour:
     the acanthus plant. '
   - ' Did you know?  Architects still use these column styles on important buildings
     today! '
-  contButton: {fileID: 0}
+  contButton: {fileID: 853723945}
   wordSpeed: 0.05
 --- !u!70 &1470053650
 CapsuleCollider2D:
@@ -4516,7 +4691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   dialoguePanel: {fileID: 2520466111762878362}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 371250440}
   dialogue:
   - Greek statues changed a lot over time. Early statues from the Archaic Period
     stood stiff and straight. Many were created as grave markers or to honor the
@@ -4529,7 +4704,7 @@ MonoBehaviour:
     preserve artworks that would otherwise have been lost. '
   - 'Did you know? Many Greek statues were originally painted with bright colors.
     They weren''t plain white like we often imagine today! '
-  contButton: {fileID: 0}
+  contButton: {fileID: 2520466111762878356}
   wordSpeed: 0.05
 --- !u!70 &1885153198
 CapsuleCollider2D:
@@ -5124,6 +5299,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6240953701494377734, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
   m_PrefabInstance: {fileID: 2520466111762878355}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2071882835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2158554181443161795, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
 --- !u!1 &2106954801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,11 +5406,11 @@ PrefabInstance:
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: contButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1173720589}
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 662182196}
     - target: {fileID: 436102501930079760, guid: 8d6fe016d793d499b819bcf9d1bb5f43, type: 3}
       propertyPath: dialoguePanel
       value: 
@@ -5570,6 +5756,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2817652557659923793, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293843114450706329, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 548018527}
+    - target: {fileID: 3293843114450706329, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 3544054595817305716, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5682,6 +5880,32 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4213060113142263202, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1121106571}
+    - target: {fileID: 4213060113142263202, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278858733156340777, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Settings_Menu","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"returnButton","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278858733156340777, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278858733156340777, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: '_data._objectReferences.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1434027478}
+    - target: {fileID: 4278858733156340777, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: '_data._objectReferences.Array.data[1]'
+      value: 
+      objectReference: {fileID: 794558344}
     - target: {fileID: 4591598742938143577, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5694,6 +5918,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1121106571}
+    - target: {fileID: 4857538498430294861, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 508
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857538498430294861, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596755772850762157, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 794906234}
+    - target: {fileID: 5596755772850762157, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 5613732837556014326, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5738,10 +5978,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7125564532344042142, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1470053649}
+    - target: {fileID: 7125564532344042142, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 7311350146474686634, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 548018527}
+    - target: {fileID: 7415428228517463819, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1885153197}
+    - target: {fileID: 7415428228517463819, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLine
+      objectReference: {fileID: 0}
     - target: {fileID: 7613288851856645953, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5827,6 +6083,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 446075633}
   m_SourcePrefab: {fileID: 100100000, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+--- !u!1 &2520466111762878356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3094966060054421954, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
+  m_PrefabInstance: {fileID: 2520466111762878355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2520466111762878359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 328598871664735623, guid: 2efaa737aab0a4c388db0b010b813a67, type: 3}
@@ -6140,3 +6401,4 @@ SceneRoots:
   - {fileID: 4764049649258208817}
   - {fileID: 1416213190}
   - {fileID: 1273646619}
+  - {fileID: 847305981}
