@@ -119,6 +119,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &102253975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4761086385047878653, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+  m_PrefabInstance: {fileID: 989148994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &102253980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102253975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualScripting.Flow::Unity.VisualScripting.ScriptMachine
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: cb0d156b26a713742b6cecbf2faec530, type: 2}
+--- !u!114 &102253981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102253975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.Variables
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &157211677
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +393,7 @@ MonoBehaviour:
   pieceHolder: {fileID: 157211678}
   piecePrefab: {fileID: 4285082358084711506, guid: 0b89b5b2f80fe5b48b0da53614c1a510, type: 3}
   puzzleTexture: {fileID: 2800000, guid: 128605284e6a4a0498a4bbcef85c0b19, type: 3}
-  playAgainButton: {fileID: 0}
+  playAgainButton: {fileID: 1745044154}
   totalPuzzleSize: {x: 5, y: 5}
 --- !u!1 &674238248
 GameObject:
@@ -446,13 +482,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2018012900462756187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018012900462756187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15709089
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 56.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207460089199845943, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2881087324363167091, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
       propertyPath: m_text
       value: "The mosaic has fallen apart! \nCan you put it back together?"
       objectReference: {fileID: 0}
+    - target: {fileID: 4145268082400912185, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761086385047878653, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4972869784679059187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
       propertyPath: m_Name
       value: Puzzle_UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4972869784679059187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7388851821357756354, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
       propertyPath: m_Pivot.x
@@ -537,7 +621,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4761086385047878653, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 102253981}
+    - targetCorrespondingSourceObject: {fileID: 4761086385047878653, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 102253980}
   m_SourcePrefab: {fileID: 100100000, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
 --- !u!1 &990189890
 GameObject:
@@ -668,6 +758,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745044154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4145268082400912185, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+  m_PrefabInstance: {fileID: 989148994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790481988
 GameObject:
   m_ObjectHideFlags: 0

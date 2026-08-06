@@ -424,6 +424,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2018012900462756187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018012900462756187, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881087324363167091, guid: dcd468304a6e4984da33498d6a8815d8, type: 3}
       propertyPath: m_text
       value: 'Gods faded into memory when the marble shattered.
