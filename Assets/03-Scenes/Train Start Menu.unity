@@ -645,8 +645,8 @@ GameObject:
   - component: {fileID: 413780253}
   - component: {fileID: 413780252}
   - component: {fileID: 413780257}
-  - component: {fileID: 413780256}
   - component: {fileID: 413780258}
+  - component: {fileID: 413780259}
   m_Layer: 5
   m_Name: StepOffHereButtonGreekGothic
   m_TagString: Untagged
@@ -756,22 +756,6 @@ RectTransform:
   m_AnchoredPosition: {x: -301, y: 152}
   m_SizeDelta: {x: 398.86, y: 183.66998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &413780256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413780251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VisualScripting.Flow::Unity.VisualScripting.ScriptMachine
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 579ed5577b7fa413295a54efdcf72cbe, type: 2}
 --- !u!114 &413780257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,6 +870,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &413780259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413780251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualScripting.Flow::Unity.VisualScripting.ScriptMachine
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 59681ce79b2ff450bb849270892399d6, type: 2}
 --- !u!1 &503756669
 GameObject:
   m_ObjectHideFlags: 0
