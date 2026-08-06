@@ -8,6 +8,10 @@ public class NPC_Dialogue : MonoBehaviour
     public Text dialogueText;
     public string[] dialogue;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip [] dialogueAudioClips;
+
     public GameObject contButton;
     public float wordSpeed = 0.05f;
 
@@ -34,6 +38,13 @@ public class NPC_Dialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
+        if (audioSource != null && dialogueAudioClips.Length > index && dialogueAudioClips [index] != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = dialogueAudioClips[index];
+            audioSource.Play();
+        }
+        
         foreach (char letter in dialogue[index])
         {
             dialogueText.text += letter;
@@ -64,6 +75,11 @@ public class NPC_Dialogue : MonoBehaviour
     private void CloseDialogue()
     {
         StopAllCoroutines();
+
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
 
         dialogueText.text = "";
         index = 0;
