@@ -119,6 +119,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &6650070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6650071}
+  - component: {fileID: 6650073}
+  - component: {fileID: 6650072}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6650071
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650070}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252899, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1978642336}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -62, y: 133}
+  m_SizeDelta: {x: -106.5225, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6650072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Mosaic - Pictures made from tiny pieces!
+--- !u!222 &6650073
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650070}
+  m_CullTransparentMesh: 1
 --- !u!1 &16428774
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +374,162 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6913123230634067540, guid: b54057764eb292a4e9fea59d39d0cd80, type: 3}
   m_PrefabInstance: {fileID: 5050078598986410480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &42925502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42925503}
+  - component: {fileID: 42925505}
+  - component: {fileID: 42925504}
+  m_Layer: 5
+  m_Name: clothing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &42925503
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42925502}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0027925079, w: 0.9999961}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 333549567}
+  - {fileID: 893048181}
+  m_Father: {fileID: 1550070859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.32}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 45, y: 138}
+  m_SizeDelta: {x: 152.27, y: 325.1554}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &42925504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42925502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -3483758079486923174, guid: 5154206c2030d6c4aadfe7a61c8e1c68, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &42925505
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42925502}
+  m_CullTransparentMesh: 1
+--- !u!1 &55762528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55762529}
+  - component: {fileID: 55762531}
+  - component: {fileID: 55762530}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &55762529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55762528}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011998783, w: 0.999928}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 138413643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -20.797333, y: 133.87862}
+  m_SizeDelta: {x: -67.137146, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &55762530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55762528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Temple - Home fit for a god!
+--- !u!222 &55762531
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55762528}
+  m_CullTransparentMesh: 1
 --- !u!1 &72505959
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,17 +737,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138413642}
-  m_LocalRotation: {x: -0, y: -0, z: 0.045846052, w: 0.9989485}
+  m_LocalRotation: {x: -0, y: -0, z: -0.002976655, w: 0.99999565}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 55762529}
+  - {fileID: 1953672650}
+  - {fileID: 887082427}
   m_Father: {fileID: 4791374556659649520}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.341}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 268.60193, y: 16.672798}
-  m_SizeDelta: {x: 82.4671, y: 220.9135}
+  m_AnchoredPosition: {x: 211, y: -28}
+  m_SizeDelta: {x: 373.6939, y: 233.2491}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138413644
 MonoBehaviour:
@@ -535,11 +773,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 64
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -547,17 +785,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Greek temples weren''t places where people gathered every day. They were
-    built to honor the gods and protect their statues inside, while ceremonies often
-    took place outside!
-
-    Most temples were built from strong materials such as
-    marble or limestone so they would last for centuries. Their rectangular shape,
-    tall columns, and triangular roof made them easy to recognize. Artists also decorated
-    temples with carved sculptures called reliefs and long decorative bands called
-    friezes, which often showed scenes from mythology or important events.
-
-'
+  m_Text: "                                 Greek temples weren't places where people
+    gathered\n                                        every day. They were built
+    to honor the gods and \n                                          protect their
+    statues inside, while ceremonies \n                                         often
+    took place outside! Most temples were built \n                                         
+    from durable materials like marble or limestone to\n                                          
+    last for centuries. The rectangular shape, tall \n                                          
+    columns, and triangular roof made temples easy\n                                          
+    to recognize. Artists also decorated them with carved sculptures called reliefs
+    and long decorative bands called friezes, which often showed scenes from mythology
+    or important events.\r\n"
 --- !u!222 &138413645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1046,7 +1284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -566.00006, y: -294.00006}
+  m_AnchoredPosition: {x: -577.79, y: -272}
   m_SizeDelta: {x: 78.7065, y: 102.2838}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239163989
@@ -1189,7 +1427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.6635, y: 330}
+  m_AnchoredPosition: {x: -17, y: 360}
   m_SizeDelta: {x: 948.4714, y: 79.5396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252137819
@@ -1291,6 +1529,172 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252137817}
+  m_CullTransparentMesh: 1
+--- !u!1 &266222734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266222735}
+  - component: {fileID: 266222737}
+  - component: {fileID: 266222736}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &266222735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266222734}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252899, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1174792204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 179.46259, y: -5.9298935}
+  m_SizeDelta: {x: 357.4086, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &266222736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266222734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "                                   A single mosaic could contain thousands
+    of tiny pieces called \u2018tesserae.\u2019"
+--- !u!222 &266222737
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266222734}
+  m_CullTransparentMesh: 1
+--- !u!1 &333549566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333549567}
+  - component: {fileID: 333549569}
+  - component: {fileID: 333549568}
+  m_Layer: 5
+  m_Name: clothingText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &333549567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333549566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 42925503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 278.14194, y: 53.324726}
+  m_SizeDelta: {x: 339.0832, y: 210.0563}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &333549568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333549566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "     Clothing was usually made from woven wool or linen.\n     Instead
+    of being sewn into many different shapes, large\n    pieces of fabric were carefully
+    folded, wrapped, and \n     fastened around the body using belts, pins, or brooches.  
+    \n      Although many statues appear plain white today, Greek \n       clothing
+    was not! People often wore brightly colored \n       fabrics dyed with natural
+    materials. This style allowed\n        people to move comfortably while also
+    showing their \n       social status, occupation, or the occasion they were \n       
+    attending."
+--- !u!222 &333549569
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333549566}
   m_CullTransparentMesh: 1
 --- !u!1 &381196964
 GameObject:
@@ -1633,7 +2037,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.6044561}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1643,7 +2047,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.65, y: 8.87}
+  m_Size: {x: 8.65, y: 5.661087}
   m_EdgeRadius: 0
 --- !u!212 &408098801
 SpriteRenderer:
@@ -1719,6 +2123,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 640764504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &443170941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443170942}
+  - component: {fileID: 443170944}
+  - component: {fileID: 443170943}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &443170942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443170941}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0066212164, w: 0.9999781}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1948115291}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -76, y: 102}
+  m_SizeDelta: {x: 100.82501, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &443170943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443170941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Olive Wreath - No medals for winning!
+--- !u!222 &443170944
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443170941}
+  m_CullTransparentMesh: 1
 --- !u!82 &446075633
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2870,6 +3353,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3734095959431207765, guid: 46a9c043e7f884003ab56d0914eaf445, type: 3}
   m_PrefabInstance: {fileID: 1175481840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &707711460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 707711461}
+  - component: {fileID: 707711463}
+  - component: {fileID: 707711462}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &707711461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707711460}
+  m_LocalRotation: {x: -0, y: -0, z: -0.02981891, w: 0.99955535}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 892282561}
+  m_Father: {fileID: 5096972369269310499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 208, y: 142}
+  m_SizeDelta: {x: 398.8872, y: 26.969}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &707711462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707711460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Statues - Stone that almost looks alive!
+--- !u!222 &707711463
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707711460}
+  m_CullTransparentMesh: 1
+--- !u!1 &726177762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726177763}
+  - component: {fileID: 726177765}
+  - component: {fileID: 726177764}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &726177763
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726177762}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0020382316, w: 0.9999979}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1738388728}
+  m_Father: {fileID: 1860409162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -64.34949, y: 108.51993}
+  m_SizeDelta: {x: 36.2016, y: 26.969}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &726177764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726177762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Amphorae - More than just a jar!
+--- !u!222 &726177765
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726177762}
+  m_CullTransparentMesh: 1
 --- !u!1 &749592049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,7 +3692,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.806
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3145,8 +3788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3142328ce6992ba47b93a300cc2864ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
-  dialoguePanel: {fileID: 2271342211617873784}
-  dialogueText: {fileID: 961236167110507454}
+  dialoguePanel: {fileID: 2098818811}
+  dialogueText: {fileID: 514419040}
   dialogue:
   - I love, love, LOVE, your chiton! Where did you get that fabric from?
   - 'Ah! I know! It must be that weaver from across town! I heard her husband makes
@@ -3157,11 +3800,11 @@ MonoBehaviour:
     this, I shouldn\u2019t!"
   audioSource: {fileID: 789160124}
   dialogueAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  contButton: {fileID: 4355837676328695011}
+  - {fileID: 8300000, guid: 8541b996e9f65f543992afa951c2105f, type: 3}
+  - {fileID: 8300000, guid: 3743445b0353dca41aff7b78cf7b8ec8, type: 3}
+  - {fileID: 8300000, guid: 49b0b056ec2b99744a7a8ea8b5dc948a, type: 3}
+  - {fileID: 8300000, guid: 5fda2f1cafc38f7449b20f6f0735e0b6, type: 3}
+  contButton: {fileID: 1907042662}
   wordSpeed: 0.05
 --- !u!70 &789160126
 CapsuleCollider2D:
@@ -3300,9 +3943,9 @@ MonoBehaviour:
     apart\u2026 "
   audioSource: {fileID: 794906238}
   dialogueAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a01b91c4d37ff1c46942780b0b117da4, type: 3}
+  - {fileID: 8300000, guid: f9cc286d40dc887499ba0390f11fd77e, type: 3}
+  - {fileID: 8300000, guid: 9574e2a1d9b2f454580509c4d2356915, type: 3}
   contButton: {fileID: 4355837676328695011}
   wordSpeed: 0.05
 --- !u!70 &794906235
@@ -3609,6 +4252,87 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &829362105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829362106}
+  - component: {fileID: 829362108}
+  - component: {fileID: 829362107}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &829362106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829362105}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252899, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2065151540}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 160.2648, y: -5.8432}
+  m_SizeDelta: {x: 319.0238, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &829362107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829362105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '                                   Olive trees were connected to the goddess
+    Athena, who, according to Greek mythology, gifted the olive tree to the people
+    of Athens!'
+--- !u!222 &829362108
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829362105}
+  m_CullTransparentMesh: 1
 --- !u!1 &841440873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,6 +4424,247 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &887082426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887082427}
+  - component: {fileID: 887082429}
+  - component: {fileID: 887082428}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &887082427
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887082426}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011998779, w: 0.999928}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 138413643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -20.14618, y: -132.43301}
+  m_SizeDelta: {x: -36.234467, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &887082428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887082426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '                                   The famous Parthenon in Athens was
+    designed using careful mathematical proportions to make it appear perfectly balanced
+    to the human eye.'
+--- !u!222 &887082429
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887082426}
+  m_CullTransparentMesh: 1
+--- !u!1 &892282560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892282561}
+  - component: {fileID: 892282563}
+  - component: {fileID: 892282562}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &892282561
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892282560}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1457379355}
+  m_Father: {fileID: 707711461}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -12, y: -251}
+  m_SizeDelta: {x: -278.81305, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &892282562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892282560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &892282563
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892282560}
+  m_CullTransparentMesh: 1
+--- !u!1 &893048180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893048181}
+  - component: {fileID: 893048183}
+  - component: {fileID: 893048182}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &893048181
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893048180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1548815048}
+  m_Father: {fileID: 42925503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 280, y: 177}
+  m_SizeDelta: {x: 398.8872, y: 26.969}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &893048182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893048180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fashion - A lot less white!
+--- !u!222 &893048183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893048180}
+  m_CullTransparentMesh: 1
 --- !u!1 &908696479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,8 +5059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3142328ce6992ba47b93a300cc2864ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
-  dialoguePanel: {fileID: 924610459865883849}
-  dialogueText: {fileID: 4543787895958520144}
+  dialoguePanel: {fileID: 4071876600726228267}
+  dialogueText: {fileID: 3468216025367017581}
   dialogue:
   - "I don\u2019t know how often she expects me to keep coming here. Calling upon
     Athena for better grades\u2026"
@@ -4107,7 +5072,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f2f6ba96cd9215b48bc645d45fee2753, type: 3}
   - {fileID: 8300000, guid: daa0259ce3ac6c743924070630eff217, type: 3}
   - {fileID: 8300000, guid: 1dcd992fc49cf6a43b63daa17a20644a, type: 3}
-  contButton: {fileID: 2092600453512339685}
+  contButton: {fileID: 656382814712692833}
   wordSpeed: 0.05
 --- !u!70 &1121106572
 CapsuleCollider2D:
@@ -4488,6 +5453,86 @@ Transform:
   - {fileID: 1850889721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1174792203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174792204}
+  - component: {fileID: 1174792206}
+  - component: {fileID: 1174792205}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1174792204
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174792203}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252899, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 266222735}
+  m_Father: {fileID: 1978642336}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -193, y: -118}
+  m_SizeDelta: {x: -385.3355, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1174792205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174792203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &1174792206
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174792203}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1175481840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4818,6 +5863,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232732496}
   m_CullTransparentMesh: 1
+--- !u!1 &1237832221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237832222}
+  - component: {fileID: 1237832224}
+  - component: {fileID: 1237832223}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1237832222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237832221}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0020382316, w: 0.9999979}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1358042084}
+  m_Father: {fileID: 1286325779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -96.69336, y: -96.75256}
+  m_SizeDelta: {x: -223.51212, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1237832223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237832221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &1237832224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237832221}
+  m_CullTransparentMesh: 1
 --- !u!1 &1273646618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4881,13 +6006,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1396450942}
+  - {fileID: 1237832222}
   m_Father: {fileID: 3671182275672475759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 277.3648, y: 0.8371277}
-  m_SizeDelta: {x: 309.5469, y: 206.0184}
+  m_AnchoredPosition: {x: 270.1565, y: 8.2679}
+  m_SizeDelta: {x: 368.4218, y: 185.4801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286325780
 MonoBehaviour:
@@ -4910,11 +6037,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 64
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5042,6 +6169,86 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1358042083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358042084}
+  - component: {fileID: 1358042086}
+  - component: {fileID: 1358042085}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1358042084
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358042083}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252903, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1237832222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 72, y: -4}
+  m_SizeDelta: {x: 157.7493, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1358042085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358042083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '                                    Architects still use these column
+    styles on important buildings today!'
+--- !u!222 &1358042086
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358042083}
+  m_CullTransparentMesh: 1
 --- !u!1 &1366813020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,6 +6333,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3378489352236544790, guid: dcaee7f5bd12712428166296650b9399, type: 3}
   m_PrefabInstance: {fileID: 1421139553551666782}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1396450941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396450942}
+  - component: {fileID: 1396450944}
+  - component: {fileID: 1396450943}
+  m_Layer: 5
+  m_Name: Header
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1396450942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396450941}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0020382316, w: 0.9999979}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1286325779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 36.212646, y: 107.296326}
+  m_SizeDelta: {x: 55.300964, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1396450943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396450941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Column orders - Not all pillars are the same!
+--- !u!222 &1396450944
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396450941}
+  m_CullTransparentMesh: 1
 --- !u!1 &1416213189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,6 +6455,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7568433593765544228, guid: 6bd2955a55d014fdeab99c7313f9c101, type: 3}
   m_PrefabInstance: {fileID: 1503477050}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1457379354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457379355}
+  - component: {fileID: 1457379357}
+  - component: {fileID: 1457379356}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1457379355
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457379354}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252903, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892282561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 68.502, y: -3.9856987}
+  m_SizeDelta: {x: 252.3751, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1457379356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457379354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "                                                Many Greek statues were
+    originally \n              painted with bright colors. They weren't plain white
+    like we often imagine today!"
+--- !u!222 &1457379357
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457379354}
+  m_CullTransparentMesh: 1
 --- !u!1 &1457452080
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,14 +6663,14 @@ MonoBehaviour:
   dialogueText: {fileID: 1747820770645677559}
   dialogue:
   - What is it up there? Leaves? Or scrolls?
-  - " I don\u2019t get it, why do the Korinthians put so much detail in those pillars
+  - " I don\u2019t get it, why do the Corinthians put so much detail in those pillars
     when no one is going to see them from down here anyway\u2026 "
   - Keep it simple with the scrolls, I say. Ionic is what I like to see!
   audioSource: {fileID: 1470053653}
   dialogueAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 1dc59a41bcebc1342af842246f9a1696, type: 3}
+  - {fileID: 8300000, guid: 836278819e8da9d4ca4b4710c075ec34, type: 3}
+  - {fileID: 8300000, guid: 943053119442f474b938b0cb507c2d97, type: 3}
   contButton: {fileID: 7511154441976081720}
   wordSpeed: 0.05
 --- !u!70 &1470053650
@@ -5844,6 +7211,86 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1548815047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548815048}
+  - component: {fileID: 1548815050}
+  - component: {fileID: 1548815049}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1548815048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548815047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1762594339}
+  m_Father: {fileID: 893048181}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -64, y: -251}
+  m_SizeDelta: {x: -278.81305, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1548815049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548815047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &1548815050
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548815047}
+  m_CullTransparentMesh: 1
 --- !u!1 &1550070858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,6 +7321,7 @@ RectTransform:
   m_Children:
   - {fileID: 8387440560397484693}
   - {fileID: 5096972369269310499}
+  - {fileID: 42925503}
   - {fileID: 239163988}
   m_Father: {fileID: 964475899496122020}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6096,6 +7544,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3142328ce6992ba47b93a300cc2864ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
+--- !u!1 &1605941778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605941779}
+  - component: {fileID: 1605941781}
+  - component: {fileID: 1605941780}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1605941779
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605941778}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252903, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1738388728}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 106.8829, y: -4.1422}
+  m_SizeDelta: {x: 227.4887, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1605941780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605941778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '                                   This pottery is one of the biggest
+    reasons we know what everyday life looked like in Ancient Greece!'
+--- !u!222 &1605941781
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605941778}
+  m_CullTransparentMesh: 1
 --- !u!1 &1669326496
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,7 +7812,7 @@ PrefabInstance:
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: contButton
       value: 
-      objectReference: {fileID: 423389498903308994}
+      objectReference: {fileID: 2092600453512339685}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: audioSource
       value: 
@@ -6292,11 +7820,11 @@ PrefabInstance:
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 1911777826030200365}
+      objectReference: {fileID: 4543787895958520144}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: dialoguePanel
       value: 
-      objectReference: {fileID: 89812241057392820}
+      objectReference: {fileID: 924610459865883849}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: dialogue.Array.size
       value: 2
@@ -6313,16 +7841,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: dialogueAudioClips.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: 'dialogueAudioClips.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 142c3f4926b001d4c9cdc8ae3f9f9cb4, type: 3}
+      objectReference: {fileID: 8300000, guid: 224c96fe38a4e724fa08aa90fddf231e, type: 3}
     - target: {fileID: 2270181643927035074, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: 'dialogueAudioClips.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: f558073d9be189948918b90ac1131d75, type: 3}
+      objectReference: {fileID: 8300000, guid: 0a15c3d282d63844a977feb94c5ff813, type: 3}
     - target: {fileID: 6121076942262372463, guid: cc64133537eb7463e9bb0f0c14319efc, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6399,6 +7927,166 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1164188254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1738388727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738388728}
+  - component: {fileID: 1738388730}
+  - component: {fileID: 1738388729}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1738388728
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738388727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1605941779}
+  m_Father: {fileID: 726177763}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -36, y: -183}
+  m_SizeDelta: {x: -278.81305, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1738388729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738388727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &1738388730
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738388727}
+  m_CullTransparentMesh: 1
+--- !u!1 &1762594338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1762594339}
+  - component: {fileID: 1762594341}
+  - component: {fileID: 1762594340}
+  m_Layer: 5
+  m_Name: Fact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1762594339
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762594338}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000037252903, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1548815048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 37.8454, y: -4.1569}
+  m_SizeDelta: {x: 191.0852, y: 38.9067}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1762594340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762594338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "                                                This is a very recent
+    discovery, a lot\n            of media still shows their clothes as just white!"
+--- !u!222 &1762594341
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762594338}
+  m_CullTransparentMesh: 1
 --- !u!1 &1850889718
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,13 +8184,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 726177763}
   m_Father: {fileID: 8387440560397484693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 238.20163, y: 0.0005970001}
-  m_SizeDelta: {x: 185.9571, y: 184.55}
+  m_AnchoredPosition: {x: 271.5995, y: 0.000020266}
+  m_SizeDelta: {x: 354.7162, y: 184.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860409163
 MonoBehaviour:
@@ -6517,7 +8206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6525,11 +8214,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 64
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6537,11 +8226,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: An amphora is a large clay jar that was used throughout Ancient Greece.
-    Ancient Greeks used amphorae to carry olive oil, wine, water, and grain. Many
-    were painted with exciting stories about heroes, gods, sports, and everyday life.
-    Early Greek vases had simple patterns, but later artists painted detailed people
-    and myths using black-figure and red-figure styles!
+  m_Text: "      An amphora is a large clay jar that was used throughout\n       
+    Ancient Greece. People used amphorae to carry olive\n        oil, wine, water,
+    and grain. Many were painted with \n        exciting stories about heroes, myths,
+    sports, and \n       everyday life. Early Greek vases had simple patterns, \n     
+    but later artists painted detailed scenes using black-figure and red-figure styles!\r\n"
 --- !u!222 &1860409164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6591,9 +8280,9 @@ MonoBehaviour:
   - "...Maybe you\u2019re right\u2026 the eggwhites do not hold well in bad weather\u2026"
   audioSource: {fileID: 1885153201}
   dialogueAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: df1c0e3ca584c714e81e3dd92e608eb6, type: 3}
+  - {fileID: 8300000, guid: fda192973b49dfa46a2e4fb83d233005, type: 3}
+  - {fileID: 8300000, guid: 3f97955c2d4f1714584d0b6b98af4824, type: 3}
   contButton: {fileID: 579268530355465809}
   wordSpeed: 0.05
 --- !u!70 &1885153198
@@ -7148,17 +8837,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948115290}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0148217, w: 0.99989015}
+  m_LocalRotation: {x: -0, y: -0, z: 0.014821699, w: 0.99989015}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 443170942}
+  - {fileID: 2065151540}
   m_Father: {fileID: 5199117135908942266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.699}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 268.84207, y: 10.922304}
-  m_SizeDelta: {x: 146.8438, y: 209.2478}
+  m_AnchoredPosition: {x: 259.2063, y: 1.4686}
+  m_SizeDelta: {x: 268.6127, y: 196.9991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948115292
 MonoBehaviour:
@@ -7173,7 +8864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7181,11 +8872,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 64
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -7193,12 +8884,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Instead of receiving gold medals or trophies, winners of the Ancient Olympic
-    Games were crowned with a wreath woven from olive branches. Wreaths were not
-    only worn by athletes, but also appeared in religious festivals, celebrations,
-    and works of art as a symbol of great honour, wisdom, peace, achievement, and
-    respect. Olive trees were highly valued in Greece as they provided food, oil,
-    wood, and shade. \n"
+  m_Text: "Instead of receiving gold medals or trophies,  \n    winners of the Olympic
+    Games were crowned with \n      a wreath woven from olive branches. Wreaths \n      
+    were not only worn by athletes, but also \n      appeared in religious festivals,
+    celebrations, and \n     works of art as a symbol of great honour, wisdom, peace,
+    achievement, and respect. Olive trees were also highly valued in Greece as they
+    provided food, oil, wood, and shade. \r\n"
 --- !u!222 &1948115293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7298,6 +8989,85 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1953672649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1953672650}
+  - component: {fileID: 1953672652}
+  - component: {fileID: 1953672651}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1953672650
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672649}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011998783, w: 0.999928}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 138413643}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.034}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -169.22318, y: -131.00977}
+  m_SizeDelta: {x: -345.9503, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1953672651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &1953672652
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672649}
+  m_CullTransparentMesh: 1
 --- !u!4 &1974051182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5097545525182305748, guid: 685053a8b92d24d439a8a5c378f88324, type: 3}
@@ -7338,7 +9108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 489, y: -294.00006}
+  m_AnchoredPosition: {x: 510, y: -269}
   m_SizeDelta: {x: 78.7065, y: 102.2838}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976203205
@@ -7476,13 +9246,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6650071}
+  - {fileID: 1174792204}
   m_Father: {fileID: 8170040135953510519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 268.6385, y: -9.356354}
-  m_SizeDelta: {x: 101.20538, y: 182.4619}
+  m_AnchoredPosition: {x: 172, y: -52}
+  m_SizeDelta: {x: 345.6745, y: 254.9725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978642337
 MonoBehaviour:
@@ -7497,7 +9269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7505,8 +9277,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -7517,13 +9289,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Artists created mosaics by placing hundreds or even thousands of small
-    pieces of stone, pottery, or glass together to make colorful and long lasting
-    images. Every small piece had to be placed by hand, requiring great patience
-    and skill. Although the Ancient Greeks created many paintings, very few have
-    survived because they were often painted on wood or walls that disappeared over
-    time. Because they survived, they help historians understand what Greek paintings
-    may have looked like.
+  m_Text: "                                               Artists created mosaics
+    by placing\n                                                hundreds or even
+    thousands of small\n                                                pieces of
+    stone, pottery, or glass together\n                                              
+    to make colorful and long lasting images. \n                                               
+    Every small piece had to be placed by\n                                                
+    hand, requiring great patience and skill. \n                                                
+    Although the Ancient Greeks created \n                                                 
+    many paintings, very few have survived as they were often painted on wood or
+    walls that disappeared over time. Because they survived, they help historians
+    understand what their paintings may have looked like."
 --- !u!222 &1978642338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7669,6 +9445,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031186757}
   m_CullTransparentMesh: 1
+--- !u!1 &2065151539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065151540}
+  - component: {fileID: 2065151542}
+  - component: {fileID: 2065151541}
+  m_Layer: 5
+  m_Name: Header (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2065151540
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065151539}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0066212164, w: 0.9999781}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 829362106}
+  m_Father: {fileID: 1948115291}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.587}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -217, y: -101}
+  m_SizeDelta: {x: -177.98808, y: 27.1701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2065151541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065151539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5169811, g: 0.361612, b: 0.2604414, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94ce36757de1f0c47881d43ad55e76df, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Did you know?
+--- !u!222 &2065151542
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065151539}
+  m_CullTransparentMesh: 1
 --- !u!1 &2098818811
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,8 +9659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.646}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: -9}
-  m_SizeDelta: {x: 223.1495, y: 210.0563}
+  m_AnchoredPosition: {x: 254.40596, y: 10.5503025}
+  m_SizeDelta: {x: 394.2997, y: 210.0563}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106954803
 MonoBehaviour:
@@ -7819,7 +9675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7827,11 +9683,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4cc5aa290cac94b49af345140f730380, type: 3}
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 64
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -7839,13 +9695,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Greek statues changed a lot over time. Early statues from the Archaic Period
-    stood stiff and straight. Many were created as grave markers or to honor the
-    gods. During the Classical Period, artists became interested in making people
-    look more natural. Later, during the Hellenistic Period, sculptures became even
-    more expressive, with carved detailed facial expressions and dramatic poses!
-    The Romans admired Greek sculptures so much that they created many copies, helping
-    preserve artworks that would otherwise have been lost.
+  m_Text: "Greek statues changed a lot over time. Early statues from the\n    Archaic
+    Period stood stiff and straight. Many were created \n      as grave markers or
+    to honor the gods. During the Classical \n       Period, artists became interested
+    in making people look \n       more natural. Later, during the Hellenistic Period,
+    sculptures \n         became even more expressive, with carved detailed\n        
+    facial expressions and dramatic poses! The Romans loved\n          Greek sculptures
+    so much that they created many copies, \n             helping preserve artworks
+    that would otherwise have \n              been lost.\r\n"
 --- !u!222 &2106954804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8339,7 +10196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8637,7 +10494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1001 &1421139553551666782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9009,8 +10866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -599, y: 16}
-  m_SizeDelta: {x: 43.7889, y: 58.7909}
+  m_AnchoredPosition: {x: -596, y: 15.195}
+  m_SizeDelta: {x: 52.1628, y: 70.034}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1911777826030200365
 MonoBehaviour:
@@ -9138,7 +10995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &2233670657051046531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9270,7 +11127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &2709134056035587408
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9522,7 +11379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9552,7 +11409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9764,8 +11621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.873}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -134}
-  m_SizeDelta: {x: 71.9867, y: 237.6382}
+  m_AnchoredPosition: {x: 42.742, y: -128.94}
+  m_SizeDelta: {x: 85.485, y: 282.1993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3671616313538916619
 MonoBehaviour:
@@ -10423,18 +12280,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2615199103793585133}
-  m_LocalRotation: {x: -0, y: -0, z: -0.045846052, w: 0.9989485}
+  m_LocalRotation: {x: -0, y: -0, z: -0.006984122, w: 0.9999757}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 138413643}
   m_Father: {fileID: 768274349}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.8}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 88.42572, y: 139.92026}
-  m_SizeDelta: {x: 211.1578, y: 191.7413}
+  m_AnchoredPosition: {x: 74, y: 236}
+  m_SizeDelta: {x: 189.1527, y: 171.7596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4817598517232848014
 GameObject:
@@ -10453,7 +12310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4882807681170955413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10471,8 +12328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 72.53393, y: -69.7647}
-  m_SizeDelta: {x: 1395.3, y: 1080}
+  m_AnchoredPosition: {x: 82, y: -32}
+  m_SizeDelta: {x: 1446.7991, y: 1119.8618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4900691669710979669
 MonoBehaviour:
@@ -10670,11 +12527,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2106954802}
+  - {fileID: 707711461}
   m_Father: {fileID: 1550070859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.651}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -521.74756, y: -123}
+  m_AnchoredPosition: {x: -558, y: -71.958}
   m_SizeDelta: {x: 110.3206, y: 243.916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5199117135908942266
@@ -10694,8 +12552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.199}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -499, y: -109}
-  m_SizeDelta: {x: 183.0833, y: 200.2155}
+  m_AnchoredPosition: {x: -536, y: -81.076}
+  m_SizeDelta: {x: 148.2769, y: 162.152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5313220523565346602
 MonoBehaviour:
@@ -10758,7 +12616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1001 &5451245415146885494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11228,7 +13086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11276,7 +13134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11402,8 +13260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -214.40347, y: 19.696415}
-  m_SizeDelta: {x: 59.8137, y: 65.411}
+  m_AnchoredPosition: {x: -215, y: 15.523}
+  m_SizeDelta: {x: 67.1427, y: 73.426}
   m_Pivot: {x: 1, y: 0}
 --- !u!224 &7243375872381990767
 RectTransform:
@@ -11655,8 +13513,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.845}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503.57422, y: 135.92026}
-  m_SizeDelta: {x: 196.8382, y: 159.0546}
+  m_AnchoredPosition: {x: -501, y: 236}
+  m_SizeDelta: {x: 182.0222, y: 147.085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8233200510771786262
 MonoBehaviour:
@@ -11764,8 +13622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -505, y: 127}
-  m_SizeDelta: {x: 118.2856, y: 184.5456}
+  m_AnchoredPosition: {x: -558, y: 220}
+  m_SizeDelta: {x: 118.29, y: 190.0735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8389345120826233178
 CanvasRenderer:
@@ -11872,7 +13730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11999,8 +13857,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -96.70831, y: 17.313616}
-  m_SizeDelta: {x: 72.7567, y: 58.7909}
+  m_AnchoredPosition: {x: -102, y: 15.523}
+  m_SizeDelta: {x: 86.4298, y: 69.839}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &8895626487520130891
 MonoBehaviour:
@@ -12015,7 +13873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12049,7 +13907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &9088770857486129268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12073,7 +13931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &9128227153282518285
 CanvasRenderer:
   m_ObjectHideFlags: 0
